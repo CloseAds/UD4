@@ -2,18 +2,18 @@ package Repaso;
 import java.util.ArrayList;
 import java.util.List;
 
-public class biblioteca {
+public class Biblioteca {
 
     private  String nombre;
 
-    private List<libro> libros;
+    private List<Libro> libros;
 
-    public biblioteca() {
+    public Biblioteca() {
     }
 
-    public biblioteca(String nombre, List<libro> libros) {
+    public Biblioteca(String nombre, List<Libro> libros) {
         this.nombre = nombre;
-        this.libros = new ArrayList<libro>();
+        this.libros = new ArrayList<Libro>();
     }
 
     public String getNombre() {
@@ -24,11 +24,11 @@ public class biblioteca {
         this.nombre = nombre;
     }
 
-    public List<libro> getLibros() {
+    public List<Libro> getLibros() {
         return libros;
     }
 
-    public void setLibros(List<libro> libros) {
+    public void setLibros(List<Libro> libros) {
         this.libros = libros;
     }
 
@@ -40,13 +40,16 @@ public class biblioteca {
                 '}';
     }
 
-    public biblioteca(List<libro> libros) {
+    public Biblioteca(List<Libro> libros) {
         this.libros = libros;
     }
     public  void anadirLibro(String isbn){
-        libros.add(libro);
+        Libro Libro;
+        libros.add(Libro);
     }
 
-    public void eliminarLibro(String isbn)
+    public void eliminarLibro(String isbn) {
+
+    }
 
 }
