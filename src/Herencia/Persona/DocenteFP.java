@@ -1,6 +1,6 @@
-package Herencia;
+package Herencia.Persona;
 
-public class DocenteFP extends Docente{
+public class DocenteFP extends Docente {
 
     public DocenteFP(String nombre, String apellidos) {
         super(nombre, apellidos);

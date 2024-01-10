@@ -1,4 +1,4 @@
-package Herencia;
+package Herencia.Animales;
 
 public class AnimalMain {
 
@@ -11,6 +11,10 @@ public class AnimalMain {
         a.emitirSonido();
         g.emitirSonido();
         p.emitirSonido();
+
+        System.out.println(a);
+        System.out.println(g);
+        System.out.println(p);
 
     }
 

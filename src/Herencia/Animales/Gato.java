@@ -1,6 +1,8 @@
-package Herencia;
+package Herencia.Animales;
 
-public class Gato extends Animal{
+import Herencia.Animales.Animal;
+
+public class Gato extends Animal {
 
     private String raza;
 

@@ -1,10 +1,10 @@
-package Herencia;
+package Herencia.Persona;
 
-public class Estudiante extends Persona{
+public class Estudiante extends Persona {
 
     int nie;
 
-    private String grupo;
+    protected String grupo;
 
     public Estudiante(String nombre, String apellidos, int nie, String grupo) {
 

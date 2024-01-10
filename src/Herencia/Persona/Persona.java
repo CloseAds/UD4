@@ -1,4 +1,4 @@
-package Herencia;
+package Herencia.Persona;
 
 public class Persona {
 
@@ -7,11 +7,11 @@ public class Persona {
     private String apellidos;
 
     public void entrar(){
-        System.out.println(nombre + " entra al edificio.");
+        System.out.println(nombre + " " + apellidos +  " entra al edificio.");
     }
 
     public void salir(){
-        System.out.println(nombre + " sale del edificio.");
+        System.out.println(nombre + " " + apellidos + " sale del edificio.");
     }
 
     public Persona(String nombre, String apellidos) {
