@@ -1,5 +1,7 @@
 package Herencia.Figuras;
 
+import com.sun.source.tree.NewArrayTree;
+
 import java.util.Scanner;
 
 public class FigurasMain {
@@ -8,11 +10,12 @@ public class FigurasMain {
 
         Scanner s = new Scanner(System.in);
 
-        System.out.println("Inserte un numero negativo para salir del menú");
+        System.out.println("Inserte 0 para salir");
 
-        int opcion;
+        int opcion = 0;
 
         do {
+
             System.out.println("Introduce que figura geométrica desea calcular:");
             System.out.println("Pulse C (círculo),");
             System.out.println("Pulse T (triángulo),");
@@ -24,13 +27,20 @@ public class FigurasMain {
             System.out.println("Introduzca 2 para calcular el perímetro de la figura");
             System.out.println("Introduzca 3 para calcular ambos");
 
-           if (caracter == 'C'){
+            int numero = s.nextInt();
 
+           if (numero == 1){
+               System.out.println();
+           }
+           else if (numero == 2){
+               System.out.println();
+           }
+           else if (numero == 3){
+               System.out.println();
+               System.out.println();
            }
 
-        } while (opcion < 0){
-
-        }
+        } while (opcion == 0);
 
 
         Circulo c1 = new Circulo("circulo1", 50);
