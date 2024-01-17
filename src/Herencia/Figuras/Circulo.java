@@ -1,22 +1,29 @@
-package Herencia.Figuras;
+//package figuras;
 
-public class Circulo extends FiguraGeometrica{
+public class Circulo {//extends FiguraGeometrica{
 
     private double radio;
 
     public Circulo(String nombre, double radio) {
-        super(nombre);
+        //super(nombre);
         this.radio = radio;
     }
 
-    @Override
-    public double obtenerArea (){
-        return Math.PI * Math.pow(2, radio);
+    public double getRadio() {
+        return radio;
     }
 
-    @Override
-    public double obtenerPerimetro (){
-        return Math.PI * (radio * 2);
+    public void setRadio(double radio) {
+        this.radio = radio;
     }
 
+
+    public double calcularArea(){
+        return radio * radio * Math.PI;
+    }
+
+
+    public double calcularPerimetro() {
+        return 2 * Math.PI * radio;
+    }
 }

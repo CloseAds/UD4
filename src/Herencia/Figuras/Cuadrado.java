@@ -1,22 +1,35 @@
 package Herencia.Figuras;
 
-public class Cuadrado extends FiguraGeometrica{
+import Herencia.Figuras.Excepciones.LadoNoValidoCuadradoException;
 
-    private float lado;
+//public class Cuadrado extends FiguraGeometrica{
 
-    public Cuadrado(String nombre, float lado) {
-        super(nombre);
-        this.lado = lado;
-    }
+    //private float lado;
 
-    @Override
-    public double obtenerArea (){
-        return lado * lado;
-    }
+    //public Cuadrado(String nombre, float lado) {
+        //super(nombre);
+        //this.lado = lado;
+    //}
 
-    @Override
-    public double obtenerPerimetro (){
-        return lado * 4;
-    }
+    //public float getLado() {
+      //  return lado;
+    //}
 
-}
+    //public void setLado(float lado) {
+      //  if (lado <= 0){
+        //    throw  new LadoNoValidoCuadradoException("El lado no puede ser 0 ni negativo.");
+        //}
+        //this.lado = lado;
+    //}
+
+    //@Override
+    //public double obtenerArea (){
+        //return lado * lado;
+    //}
+
+    //@Override
+    //public double obtenerPerimetro (){
+      //  return lado * 4;
+    //}
+
+//}

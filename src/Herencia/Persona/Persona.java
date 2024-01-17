@@ -1,18 +1,14 @@
 package Herencia.Persona;
 
-public class Persona {
+public abstract class Persona {
 
     private String nombre;
 
     private String apellidos;
 
-    public void entrar(){
-        System.out.println(nombre + " " + apellidos +  " entra al edificio.");
-    }
+    //public entrar();
 
-    public void salir(){
-        System.out.println(nombre + " " + apellidos + " sale del edificio.");
-    }
+    //public abstract salir();
 
     public Persona(String nombre, String apellidos) {
         this.nombre = nombre;

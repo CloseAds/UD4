@@ -1,25 +1,30 @@
-package Herencia.Figuras;
+/*package figuras;
 
-public class TrianguloEquilatero extends FiguraGeometrica {
+public class TrianguloEquilatero extends FiguraGeometrica{
+    private double lado;
 
-    private float base;
-
-    private float altura;
-
-    public TrianguloEquilatero(String nombre, float base, float altura) {
+    public TrianguloEquilatero(String nombre, double lado) {
         super(nombre);
-        this.base = base;
-        this.altura = altura;
+        this.lado = lado;
+    }
+
+    public double getLado() {
+        return lado;
+    }
+
+    public void setLado(double lado) {
+        this.lado = lado;
     }
 
     @Override
-    public double obtenerArea (){
-        return base * altura / 2;
+    public double calcularArea() {
+        return (lado * ( (lado * Math.sqrt(3)) /2 )) / 2;
     }
 
     @Override
-    public double obtenerPerimetro (){
-        return base * 3;
+    public double calcularPerimetro() {
+        return 3 * lado;
     }
-
 }
+
+ */

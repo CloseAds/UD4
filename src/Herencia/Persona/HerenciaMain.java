@@ -4,10 +4,7 @@ public class HerenciaMain {
 
     public static void main(String[] args) {
 
-        Persona p = new Persona("Chema", "de Castro");
 
-        p.entrar();
-        p.salir();
 
         Estudiante e1 = new Estudiante("José", "Moral", 12345, "1º DAM");
 
@@ -32,7 +29,6 @@ public class HerenciaMain {
 
         Persona p3 = new DocenteFP("Antonio", "Pradells");
 
-        p3.salir();
 
         System.out.println(e1 instanceof Persona);
         System.out.println(e1 instanceof Estudiante);
@@ -52,8 +48,6 @@ public class HerenciaMain {
 
         Persona per2 = new DocenteFP("Carlos", "García");
 
-        per2.entrar();
-        per2.salir();
 
         System.out.println(per2 instanceof  Persona);  // true o false para comprobar si una clase pertenece a otra;
         System.out.println(per2 instanceof Estudiante);

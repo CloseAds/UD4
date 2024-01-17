@@ -1,9 +1,11 @@
-package Herencia.Figuras;
+/*package figuras;
 
-public class Pentagono extends FiguraGeometrica{
+import java.io.IOException;
+
+public class Pentagono extends FiguraGeometrica {
     private double arista;
 
-    public Pentagono(String nombre, double arista) throws IllegalArgumentException{
+    public Pentagono(String nombre, double arista) throws IllegalArgumentException, IOException{
         super(nombre);
         setArista(arista);
     }
@@ -12,30 +14,32 @@ public class Pentagono extends FiguraGeometrica{
         return arista;
     }
 
-    public void setArista(double arista) throws IllegalArgumentException{
-        if (arista < 0){
-            throw new IllegalArgumentException("Lado no válido.");
+    public void setArista(double arista) throws IllegalArgumentException, IOException {
+        if (arista < 0) {
+            throw new IllegalArgumentException("Lado no válido");
         }
         this.arista = arista;
     }
 
-    public double obtenerPerimetro (){
+    @Override
+    public double calcularPerimetro() {
         return 5 * arista;
     }
 
     public static void main(String[] args) {
         Pentagono p;
-        try{
-            p = new Pentagono("Pentágono",-1);
+        try {
+            p = new Pentagono("Pentagono", -1);
+        }catch (Throwable e){
+            try {
+                p = new Pentagono("Pentagono", -1);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
         }
-        catch (IllegalArgumentException e){
-            p = new Pentagono("Pentágono",0);
 
-        }
-
-
-        System.out.println(p.obtenerPerimetro());
-
+        System.out.println(p.calcularPerimetro());
     }
-
 }
+
+ */
