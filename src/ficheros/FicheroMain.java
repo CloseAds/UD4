@@ -25,12 +25,17 @@ public class FicheroMain {
         //lista.add(dt1);
 
         listar(lista);
+
+        System.out.println(i1.describir());
+
     }
 
     private static void listar(List <Rotable> lista){
 
         for (Rotable l: lista){
             l.rotarSentidoAgujas();
+            l.rotar360grados();
+            System.out.println(Rotable.radianesGrados(1));
         }
 
     }

@@ -48,6 +48,12 @@ public class Imagen implements Almacenable ,Rotable{
     }
 
     @Override
+    public String describir() {
+        return "Imagen es" + Rotable.super.describir()
+                + " " + Almacenable.super.describir();
+    }
+
+    @Override
     public String toString() {
         return "Imagen{" +
                 "anchura=" + anchura +
